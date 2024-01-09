@@ -28,7 +28,6 @@ list_of_files=[
     "setup.config",
     "tox.ini",
     "experiment/experiments.ipynb"
-
 ]
 
 for filepath in list_of_files:
