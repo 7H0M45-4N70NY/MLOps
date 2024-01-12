@@ -67,7 +67,7 @@ class DataTransformation:
             raise customexception(e,sys)
             
     
-    def get_data_transformation(self,train_path,test_path):
+    def initialize_data_transformation(self,train_path,test_path):
         try:
             train_df=pd.read_csv(train_path)
             test_df=pd.read_csv(test_path)
@@ -76,7 +76,7 @@ class DataTransformation:
             logging.info(f'Train Dataframe Head : \n{train_df.head().to_string()}')
             logging.info(f'Test Dataframe Head : \n{test_df.head().to_string()}')
             
-            preprocessing_obj = self.get_data_transformation()
+            preprocessing_obj = self.run_data_transformation()
             
             target_column_name = 'price'
             drop_columns = [target_column_name,'id']

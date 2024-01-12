@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
-from src.logger.logging import logging
-from src.exception.exception import customexception
+from src.logger.logger import logging
+from src.exception.exceptions import customexception
 import os
 import sys
 from dataclasses import dataclass
